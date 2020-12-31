@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+  <title>Timer</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="inputs">
+      <div class="input-container">
+        <div class="input-title">
+          <p>H</p>
+        </div>
+        <div class="input hours">
+          <button class="increment" data-target="hours">+</button>
+          <div class="value">
+            <input value="00" type="text" disabled />
+          </div>
+          <button class="decrement" data-target="hours">-</button>
+        </div>
+      </div>
+      <div class="input-container">
+        <div class="input-title">
+          <p>M</p>
+        </div>
+        <div class="input minutes">
+          <button class="increment" data-target="minutes">+</button>
+          <div class="value">
+            <input value="00" type="text" disabled />
+          </div>
+          <button class="decrement" data-target="minutes">-</button>
+        </div>
+      </div>
+      <div class="input-container">
+        <div class="input-title">
+          <p>S</p>
+        </div>
+        <div class="input seconds">
+          <button class="increment" data-target="seconds">+</button>
+          <div class="value">
+            <input value="00" type="text" disabled />
+          </div>
+          <button class="decrement" data-target="seconds">-</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div>
+        <button id="start">START</button>
+      </div>
+      <div>
+        <button id="stop">STOP</button>
+      </div>
+    </div>
+    <div class="views">
+      <div class="view hours">
+        <div class="title">Hours</div>
+        <div class="value">
+          <p>00</p>
+        </div>
+
+      </div>
+      <div class="seperator">:</div>
+      <div class="view minutes">
+
+        <div class="title">Minutes</div>
+        <div class="value">
+          <p>00</p>
+        </div>
+
+      </div>
+      <div class="seperator">:</div>
+
+      <div class="view seconds">
+
+        <div class="title">Seconds</div>
+        <div class="value">
+          <p>00</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="copyright">
+      <p>All rights reserv:D &copy; Muhammad Yasser 2020</p>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in;
+}
+
+.container.hidden {
+  transform: translateY(-230px);
+}
+
+.inputs {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-container {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-title p {
+  color: #fff;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 80px;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  background-color: rgb(33, 32, 156, 0.9);
+  color: #fff;
+  border: none;
+  font-size: 2em;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+button:hover {
+  background-color: rgb(33, 32, 156, 1);
+}
+
+.value {
+  height: 80px;
+  background-color: skyblue;
+  margin: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value input {
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 3em;
+  /* color: #fff; */
+  color: rgb(33, 32, 156, 1);
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+  gap: 20px;
+}
+
+.controls button {
+  padding: 10px;
+  /* width: 150px; */
+  font-size: 1.5em;
+}
+
+.views {
+  width: 400px;
+  /* padding: 5px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  color: #fff;
+}
+
+.view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.view.seconds {
+  transition: all 0.3s ease-in;
+}
+
+.view .value {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(33, 32, 156, 1);
+  justify-content: center;
+  align-items: center;
+}
+
+.view .value p {
+  padding: 0;
+  margin: 0;
+  font-size: 3em;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: skyblue;
+  background-color: rgba(40, 40, 131, 0.3);
+}
+
+@media (max-width: 450px) {
+  .controls {
+    flex-direction: column;
+  }
+
+  .controls button {
+    width: 180px;
+  }
+
+  .views {
+    width: 300px;
+  }
+
+  .view .value {
+    width: 90px;
+    height: 90px;
+  }
+
+  .view p {
+    font-size: 2em;
+  }
+  /* 
+  .seperator {
+    display: none;
+  } */
+
+  footer {
+    margin-top: 65px;
+    font-size: 0.8em;
+  }
+}
