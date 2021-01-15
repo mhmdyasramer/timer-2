@@ -25,6 +25,11 @@ let timer;
 let paused = false;
 let totalSeconds = 0;
 
+function playSound() {
+  const audio = new Audio('./assets/beep.mp3');
+  audio.play();
+}
+
 function startTimer(h = 0, m = 0, s = 0) {
   paused = false;
   startTimerBtn.textContent = 'PAUSE';
@@ -57,6 +62,9 @@ function startTimer(h = 0, m = 0, s = 0) {
     }
 
     if (totalSeconds === 0) {
+      // play sound
+      playSound();
+
       paused = false;
       startTimerBtn.textContent = 'START';
       updateTimer();
